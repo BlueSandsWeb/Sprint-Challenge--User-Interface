@@ -145,7 +145,6 @@ figure {
     width: 50%;
     margin: 10px;
     padding-bottom: 25px;
-    /* border-bottom: 1px dashed black; */
     font-size: var(--font-size);
     -webkit-transform: perspective(500);
     -webkit-transform-style: preserve-3d;
@@ -153,7 +152,7 @@ figure {
 }
 
 figure:hover {
-    -webkit-transform: perspective(500) rotateX(90deg) translateY(-3em) translateZ(3em);
+    -webkit-transform: perspective(2000) rotateX(90deg) translateY(-3em) translateZ(14em);
 }
 
 .card img {
@@ -176,6 +175,7 @@ figcaption {
     -webkit-transform: rotateX(-90deg);
     -webkit-transform-origin: 100% 0;
     -webkit-transition: .5s;
+    height: 94.4%;
 }
 
 figure:hover figcaption {
