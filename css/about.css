@@ -138,17 +138,57 @@ nav a {
 }
 
 .card {
+    width: 100%;
+}
+
+figure {
+    width: 50%;
+    margin: 10px;
+    padding-bottom: 25px;
+    /* border-bottom: 1px dashed black; */
+    font-size: var(--font-size);
+    -webkit-transform: perspective(500);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: .5s;
+}
+
+figure:hover {
+    -webkit-transform: perspective(500) rotateX(90deg) translateY(-3em) translateZ(3em);
+}
+
+.card img {
+    background-color: #222;
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: .5s;
+}
+
+figure:hover img {
+    box-shadow: none;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    padding: 1.5em;
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: 100% 0;
+    -webkit-transition: .5s;
+}
+
+figure:hover figcaption {
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+}
+
+/* .card {
     width: 50%;
     margin: 10px;
     padding-bottom: 25px;
     border-bottom: 1px dashed black;
     font-size: var(--font-size);
-}
-
-
-.card img {
-    width: 100%;
-}
+} */
 
 .card h3 {
     margin-top: 10px;
