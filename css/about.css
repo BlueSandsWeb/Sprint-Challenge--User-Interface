@@ -176,7 +176,7 @@ figcaption {
     -webkit-transform: rotateX(-90deg);
     -webkit-transform-origin: 100% 0;
     -webkit-transition: .5s;
-    /* height: 94.4%; */
+    height: 100%;
 }
 
 figure:hover figcaption {
